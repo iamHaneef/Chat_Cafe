@@ -1,0 +1,787 @@
+
+
+@mixin hplaptop
+{
+    @media screen and (max-width:1000px) {
+        @content;
+    }
+}
+  //register
+.formContainer {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://www.transparenttextures.com/patterns/cubes.png'); // Adding a subtle pattern
+    opacity: 0.1;
+    pointer-events: none;
+  }
+}
+
+.formWrapper {
+  background-color: white;
+  padding: 35px;
+  width: 20%; // Adjusted width for the form wrapper
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  
+  .logo {
+    color: rgb(26, 42, 78);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; // Centered text
+    margin-bottom: 10px;
+    //margin-left: 80px;
+    margin-left: 80px;
+  }
+
+  .title {
+    margin-top: 20px;
+    color: rgb(124, 133, 154);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center; // Centered text
+    margin-bottom: 20px;
+    margin-left: 125px;
+    
+
+  }
+  .logo1 {
+    color: rgb(26, 42, 78);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; // Centered text
+    margin-bottom: 10px;
+    //margin-left: 80px;
+    margin-left: 80px;
+  }
+  .titles{
+    margin-top: 20px;
+    color: rgb(124, 133, 154);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center; // Centered text
+    margin-bottom: 20px;
+    margin-left: 115px;
+    //padding-top: 30px;
+    
+    
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    input {
+      padding: 15px;
+      border: none;
+      border-bottom: 1.5px solid rgb(168, 182, 221);
+      font-size: 14px;
+      outline: none;
+      transition: all 0.3s ease;
+
+      &:focus {
+        border-bottom: 1.5px solid rgb(83, 147, 237);
+      }
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      margin-top: 10px;
+      
+      img {
+        padding-top: 5px;
+        height: 40px; // Reduced height for the avatar image
+        width: 40px; // Reduced width for the avatar image
+      }
+
+      .avatar {
+        color: rgb(83, 147, 237);
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+
+    button {
+      margin-top: 20px;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      background-color: rgb(83, 147, 237);
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: rgb(66, 120, 192);
+      }
+    }
+
+    span {
+      color: red;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center; // Centered text
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(124, 133, 154);
+    margin-top: 20px;
+
+    .last {
+      color: rgb(26, 42, 78);
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: rgb(83, 147, 237);
+      }
+    }
+  }
+}
+      
+ // Login Component
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+  .formWrapper {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    .logo {
+      color: #333;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      
+      input {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+      }
+      
+      button {
+        padding: 12px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+}   
+
+
+
+.home {
+  background-image:url(https://wallpapercave.com/wp/wp3869348.jpg);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+
+  .container {
+    backdrop-filter: blur(10px);
+    //background: rgba(255, 255, 255, 0.3);
+    background: rgba(26, 42, 78, 0.8);
+    
+    border-radius: 15px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    
+    @include hplaptop {
+      width: 85%;
+    }
+
+    .sidebar {
+      flex: 1;
+      //background: linear-gradient(135deg, #3a6186, #89253e);
+      //background: linear-gradient(135deg, #cccff4, #6b71a7,#1a14c7);
+      background: linear-gradient(135deg, #c2d2de, #748ed5,#353ab5);
+      position: relative;
+      border-right: none;
+      //border-radius: 15px 0 0 15px;
+      
+      
+
+      .nav {
+        background: rgba(26, 42, 78, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        height: 60px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+        .name {
+          color: white;
+          font-weight: bold;
+          font-size: 24px;
+          //font-family: 'Arial', sans-serif;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-family: 'Pacifico', cursive;
+
+
+
+
+
+
+
+
+
+
+          @include hplaptop {
+            display: none;
+          }
+        }
+
+        .user {
+          display: flex;
+          gap: 15px;
+
+          img {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            border: 2px solid white;
+            transition: transform 0.3s;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+
+          span {
+            font-size: 18px;
+            color: white;
+            //font-family: 'Cambria', serif;
+           // font-family: 'Kaushan Script', cursive;
+            font-family: 'Amatic SC', cursive;
+
+            margin-top: 5px;
+          }
+
+          button {
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 12px;
+            color: white;
+            background-color: #5584ff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+              background-color: #3b62e5;
+            }
+
+            @include hplaptop {
+              position: absolute;
+              bottom: 15px;
+              padding: 10px 20px;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+
+      .search {
+        border-bottom: 1px solid white;
+        //background-color: rgba(28, 45, 97, 0.9);
+        //background: linear-gradient(15deg,#ffffff,rgba(26, 66, 78, 0.8));
+        background: linear-gradient(135deg, #c2d2de, #748ed5,#353ab5);
+        padding: 15px;
+
+        .searchform {
+          display: flex;
+
+          input {
+            padding: 12px;
+            background-color: transparent;
+            border: none;
+            color: rgba(61, 81, 140, 0.8);
+            font-size: 18px;
+            outline: none;
+            transition: border 0.3s ease;
+
+            &::placeholder {
+              font-size: 18px;
+              font-weight: 300;
+              color: rgba(61, 81, 140, 0.8);
+            }
+
+            &:focus {
+              border-bottom: 2px solid #5584ff;
+            }
+          }
+        }
+      }
+
+      .userChat {
+        display: flex;
+        gap: 10px;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 10px;
+        transition: background-color 0.3s, transform 0.3s;
+
+        &:hover {
+          background-color: rgba(0, 59, 136, 0.8);
+          transform: scale(1.05);
+
+          .userChatInfo {
+            color: white;
+          }
+        }
+
+        img {
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .userChatInfo {
+          color: rgba(0, 59, 136, 0.8);
+          font-size: 20px;
+          //font-family: 'Segoe UI', sans-serif;
+          margin-top: 8px;
+          font-family: 'Shadows Into Light', cursive;
+
+
+
+        }
+      }
+
+      .chats {
+        padding: 10px;
+
+        .userinfo {
+          display: flex;
+          gap: 10px;
+          padding: 10px;
+          border-radius: 10px;
+          transition: background-color 0.3s, transform 0.3s;
+          
+          &:hover {
+            background-color: rgba(0, 59, 136, 0.8);
+            color: white;
+            //font-size: 30px;
+            transform: scale(1.05);
+            cursor: pointer;
+
+            
+            .detail span {
+              color: white;
+            }
+          }
+          
+
+          img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .detail {
+            margin-top: 10px;
+
+           
+
+            span {
+              margin: 0;
+              //color: rgb(83, 79, 206);
+              color:  rgba(26, 42, 78, 0.8);
+              font-size: 20px;
+              //font-family: 'Segoe UI', sans-serif;
+              font-family: 'Parisienne', cursive;
+
+              &:hover{
+                color: white;
+              }
+              
+
+            }
+            
+            p {
+              margin: 0;
+              color: white;
+              font-size: 18px;
+              font-family: 'Segoe UI', sans-serif;
+            }
+          }
+        }
+      }
+    }
+
+    .chatbar {
+      flex: 2;
+     // background-color: rgba(61, 81, 140, 0.9);
+     background: linear-gradient(135deg, #8e8cd7,#3b398e);
+      //border-radius: 0 15px 15px 0;
+      //border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0px;
+
+      .chatnav {
+        background-color: rgba(61, 81, 140, 0.8);
+        padding: 23.3px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        //border-radius: 10px 10px 0px 0px;
+
+        span {
+          font-size: 24px;
+          font-family: 'Amatic SC', cursive;
+          color: #d5dae7;
+
+        }
+
+        .images {
+          display: flex;
+          gap: 15px;
+
+          img {
+            height: 20px;
+            width: 20px;
+            cursor: pointer;
+            transition: transform 0.3s;
+
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+      .messages::-webkit-scrollbar{
+        display: none;
+    }
+      .messages {
+        //background-color: rgba(173, 189, 242, 0.9);
+        //background-color: rgba(196, 185, 232, 0.9);
+        background: linear-gradient(135deg, #c2d2de, #748ed5,#353ab5);
+        height: calc(100% - 100px);
+        overflow-y: auto;
+        padding: 20px;
+        //border-radius:0px 0px 10px 10px;
+        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        .message {
+          display: flex;
+          margin-bottom: 15px;
+          gap: 10px;
+
+          .messageinfo {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+
+            img {
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              border: 2px solid white;
+            }
+
+            span {
+              font-size: 15px;
+              color: white;
+              font-family: 'Segoe UI', sans-serif;
+            }
+          }
+
+          .messagecontact {
+            display: flex;
+            flex-direction: column;
+            //align-items:self-start;
+            align-items: flex-start;
+
+
+            img {
+              width: 220px;
+              height: 160px;
+              border-radius: 10px;
+              object-fit: cover;
+              //padding: 0px;
+              
+              
+            }
+
+            p {
+              font-size: 18px;
+              font-family: 'Pacifico', cursive;
+              
+             // font-family: 'Arial', sans-serif;
+              background-color: #5584ff;
+              color: white;
+              padding: 10px 15px;
+              border-radius: 0px 13px 13px 13px;
+              margin-top: 5px;
+              transition: background-color 0.3s;
+
+              &:hover {
+                background-color: #3b62e5;
+              }
+            }
+          }
+
+          &.owner {
+            flex-direction: row-reverse;
+
+            .messagecontact {
+              align-items: flex-end;
+
+              p {
+                font-family: 'Pacifico', cursive;
+
+                border-radius: 13px 13px 0 13px;
+                background-color:  white;
+                color:  #3b62e5;
+                &:hover{
+                  background-color: #353ab5;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .inputs {
+        //padding-top: 10px;
+        //color: white;
+        //margin-top: 5px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 10px;
+        border-top: 2px solid #ddd;
+        //border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        input {
+          width: 100%;
+          border: none;
+          outline: none;
+          padding: 15px;
+          font-size: 16px;
+          //color: black;
+          font-family: 'Lobster', cursive;
+
+          
+        }
+
+        .block {
+          display: flex;
+          gap: 15px;
+
+          img {
+            margin-top: 8px;
+            height: 25px;
+              width: 25px;
+            cursor: pointer;
+            transition: transform 0.3s;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+
+          label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+
+            img {
+              height: 25px;
+              width: 25px;
+              transition: transform 0.3s;
+              margin-bottom: 5px;
+
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+          }
+            button {
+              font-weight: bold;
+              padding: 10px 15px;
+              background-color: #5584ff;
+              color: white;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              border-radius: 5px;
+              font-size: 14px;
+              transition: background-color 0.3s;
+
+              &:hover {
+                background-color: #3b62e5;
+              }
+            }
+          
+        }
+      }
+    }
+  }
+}
+
+// Animation Keyframes
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+// Applying animations
+.home {
+  .container {
+    animation: fadeIn 0.5s ease-in-out;
+
+    .sidebar {
+      .nav {
+        .name {
+          animation: slideIn 0.6s ease-in-out;
+        }
+
+        .user {
+          img {
+            animation: pulse 1.5s infinite;
+          }
+
+          button {
+            animation: fadeIn 1s ease-in-out;
+          }
+        }
+      }
+
+      .userChat,
+      .userinfo {
+        animation: fadeIn 1s ease-in-out;
+
+        &:hover {
+          animation: rotate 0.5s ease-in-out;
+          
+        }
+      }
+    }
+
+    .chatbar {
+      .chatnav {
+        span,
+        .images img {
+          animation: fadeIn 0.7s ease-in-out;
+        }
+      }
+
+      .messages {
+        
+      }
+
+      .inputs {
+        input {
+          animation: fadeIn 0.8s ease-in-out;
+        }
+
+        .block img,
+        .block label button {
+          animation: pulse 1.5s infinite;
+        }
+      }
+    }
+  }
+}
+
+
+
