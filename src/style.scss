@@ -242,7 +242,9 @@
     @include hplaptop {
       width: 85%;
     }
-
+    .sidebar::-webkit-scrollbar{
+      display: none;
+  }
     .sidebar {
       flex: 1;
       //background: linear-gradient(135deg, #3a6186, #89253e);
@@ -251,6 +253,7 @@
       position: relative;
       border-right: none;
       //border-radius: 15px 0 0 15px;
+     
       
       
 
@@ -404,9 +407,13 @@
 
         }
       }
-
+      .chats::-webkit-scrollbar{
+        display: none;
+    }   
       .chats {
         padding: 10px;
+        overflow-y: auto;
+        max-height: calc(100vh - 175px);
 
         .userinfo {
           display: flex;
